@@ -5,9 +5,7 @@ var generateBtn = document.querySelector("#generate");
 //Prompt the user for info
 
 var len = prompt("Please choose a password length between 8 and 128 characters.");
-if(typeof len !== typeof testInt){
-  len = 0;
-}
+
 
 while(len === null){ len = 0;}
 
