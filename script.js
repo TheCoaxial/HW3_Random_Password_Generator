@@ -24,7 +24,30 @@ var passNumbers = prompt("Would you like it to contain numbers? yes/no");
 var special = prompt("Would you like it to contain special characters? yes/no");
 
 
-  
+// Taking care of null
+
+if(lowerCase === null){ lowerCase = "no";}
+
+if(upperCase === null){ upperCase = "no";}
+
+if(passNumbers === null){ passNumbers = "no";}
+
+if(special === null){ special = "no";}
+
+// If the user enters anything other than yes it is assumed no
+
+if(lowerCase.toLocaleLowerCase() !== "yes"){
+  lowerCase = "no";
+}
+if(upperCase.toLocaleLowerCase() !== "yes"){
+  upperCase = "no";
+}
+if(passNumbers.toLocaleLowerCase() !== "yes"){
+  passNumbers = "no";
+}
+if(special.toLocaleLowerCase() !== "yes"){
+  special = "no";
+}
 
 
 
