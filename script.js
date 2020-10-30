@@ -50,7 +50,18 @@ if(special.toLocaleLowerCase() !== "yes"){
 }
 
 
+// If the user enters no or null to all four character types
 
+while(upperCase === null && lowerCase === null && passNumbers === null && special === null ||upperCase === "no" && lowerCase === "no" && passNumbers === "no" && special === "no"){
+  alert("At least one character type must be selected.");
+  lowerCase = prompt("Would you like it to contain lowecase letters? yes/no");
+
+  upperCase = prompt("Would you like it to contain uppercase letters? yes/no");
+
+  passNumbers = prompt("Would you like it to contain numbers? yes/no");
+
+  special = prompt("Would you like it to contain special characters? yes/no");
+}
 
 
 
