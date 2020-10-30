@@ -66,18 +66,34 @@ while(upperCase === null && lowerCase === null && passNumbers === null && specia
 
 
 
-
 // Write password to the #password input
 function writePassword() { 
- 
+  console.log("I ran first");
+
+    charSet = "";
+
+    if(lowerCase.toLocaleLowerCase() === "yes"){
+      charSet += "abcdefghijklmnopqrstuvwxyz";
+    }
+    if(upperCase.toLocaleLowerCase() === "yes"){
+      charSet += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    }
+    if(passNumbers.toLocaleLowerCase() === "yes"){
+      charSet += "0123456789";
+    }
+    if(special.toLocaleLowerCase() === "yes"){
+      charSet += "\" !\"#$%&'()*+,-./:;<=>?@[]^_`{|}~"
+    }
+
+    var password = '';
+    for (var i = 0; i < len; i++) {
+      console.log("I Ran Second");
+        var randomPoz = Math.floor(Math.random() * charSet.length);
+        password += charSet.substring(randomPoz,randomPoz+1);
+    }
     
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
 
   return password;
-
-}
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
