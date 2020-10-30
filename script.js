@@ -65,7 +65,7 @@ while(upperCase === null && lowerCase === null && passNumbers === null && specia
 
 // Write password to the #password input
 function writePassword() { 
-  console.log("I ran first");
+  
 
     charSet = "";
 
@@ -84,7 +84,7 @@ function writePassword() {
 
     var password = '';
     for (var i = 0; i < len; i++) {
-      console.log("I Ran Second");
+      
         var randomPoz = Math.floor(Math.random() * charSet.length);
         password += charSet.substring(randomPoz,randomPoz+1);
     }
