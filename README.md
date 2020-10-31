@@ -4,10 +4,10 @@ This repository is for the code for a bootcamp homework with the objective of ma
 The objective was to make a random password generator that would generate a password between 8 and 128 characters long based on criteria we gathered from the user via prompts. 
 The criteria availible were as follows. 
 
--Lowercase letters
--Uppercase letters
--numbers
--Special characters
+* Lowercase letters
+* Uppercase letters
+* numbers
+* Special characters
 
 I achieved this by starting with an empty string and then passing in/concatenating specific Charsets after gathering the user input. Below is a link and screenshot of the webpage and an output featuring all 4 criteria. 
 
